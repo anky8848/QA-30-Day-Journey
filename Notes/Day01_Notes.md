@@ -3,7 +3,7 @@
 ## What is Software?
 Software is a collection of programs, data, and instructions that tell a computer what to do.
 
-suppose u bough a new mobile phone,it contains screen,buttons,camera adn other... when u click  the camera who tolds to system to open cam, the hardware ? no....!   the softare does. softaware is collection of instruction or data that tell computer what to do.. 
+suppose u bought a new mobile phone,it contains screen,buttons,camera and other... when u click  the camera who tolds to system to open cam, the hardware ? no....!   the softare does. softaware is collection of instruction or data that tell computer what to do.. 
 # Types 
 system software like:windows,linux,android,masOS
 application software like: camera,chrome,phonepay etc
