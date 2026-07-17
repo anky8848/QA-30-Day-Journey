@@ -165,3 +165,47 @@ Each bug should include:
 - QA participates throughout the SDLC.
 - Practical tasks are meant to build a QA mindset.
 - Bug scenarios can be hypothetical for learning purposes.
+
+
+
+
+
+## TAsk 1
+| S.N. | Test Scenario                                                 | Result | Remarks                                                                                                                                          |
+| ---- | ------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | Verify the Inventory page loads successfully after login.     | ✅ Pass | Inventory page loaded successfully.                                                                                                              |
+| 2    | Verify all product names are displayed.                       | ✅ Pass | All product names are visible.                                                                                                                   |
+| 3    | Verify all product prices are displayed correctly.            | ✅ Pass | Prices are displayed for all products.                                                                                                           |
+| 4    | Verify the **Add to Cart** button works for all products.     | ❌ Fail | Only **3 out of 6** Add to Cart buttons work. The remaining buttons do not respond.                                                              |
+| 5    | Verify the **Remove** button works after adding a product.    | ❌ Fail | Remove button appears but does not remove the product.                                                                                           |
+| 6    | Verify the shopping cart badge updates after adding products. | ✅ Pass | Cart badge updates correctly when products are added.                                                                                            |
+| 7    | Verify product sorting works (A–Z, Z–A, Low–High, High–Low).  | ❌ Fail | Only the default **A–Z** sorting works. Other sorting options do not work.                                                                       |
+| 8    | Verify product images are displayed correctly.                | ✅ Pass | All product images are displayed correctly.                                                                                                      |
+| 9    | Verify clicking the cart icon opens the Cart page.            | ✅ Pass | Cart page opens successfully.                                                                                                                    |
+| 10   | Verify the checkout process works correctly.                  | ❌ Fail | Last Name field does not accept input. Finish button is not working. First Name and Postal Code fields work correctly. Logout works as expected. |
+
+
+## Task 2 
+# Day 4 - Test Cases (SauceDemo)
+
+| Test Case ID | Module | Title | Preconditions | Test Steps | Expected Result | Actual Result | Status |
+|--------------|--------|-------|----------------|------------|-----------------|---------------|--------|
+| TC001 | Inventory | Verify the Inventory page loads successfully after login. | User is on the Login page with valid credentials. | 1. Enter a valid username.<br>2. Enter a valid password.<br>3. Click the **Login** button. | The Inventory page should load successfully and display all inventory items. |  |  |
+| TC002 | Inventory | Verify all product names are displayed. | User is logged in and on the Inventory page. | 1. Login with valid credentials.<br>2. Navigate to the Inventory page.<br>3. Observe the product list. | All product names should be displayed correctly. |  |  |
+| TC003 | Product Pricing | Verify all product prices are displayed correctly. | User is logged in and on the Inventory page. | 1. Login with valid credentials.<br>2. Navigate to the Inventory page.<br>3. Check the price displayed for each product. | Every product should display its corresponding price correctly. |  |  |
+| TC004 | Add to Cart | Verify the **Add to Cart** button works for all products. | User is logged in and on the Inventory page. | 1. Login with valid credentials.<br>2. Click the **Add to Cart** button for each product. | The selected product should be added to the shopping cart successfully, and the button should change to **Remove**. |  |  |
+| TC005 | Remove Product | Verify the **Remove** button works after adding a product. | User is logged in, on the Inventory page, and at least one product has been added to the cart. | 1. Login with valid credentials.<br>2. Click **Add to Cart** for any product.<br>3. Click the **Remove** button. | The selected product should be removed from the shopping cart, and the button should change back to **Add to Cart**. |  |  |
+
+
+
+## TAsk 3
+# Day 4 - Bug Thinking Exercise
+
+| S.N. | Bug | Severity | Priority | Reason |
+|------|-----|----------|----------|--------|
+| 1 | Product image not loading. | Medium | Medium | Users can still view product details and purchase the item, but the user experience is affected. |
+| 2 | Add to Cart button doesn't work. | High | High | Users cannot add products to the cart, preventing purchases. |
+| 3 | Logout button missing. | Critical | High | Users cannot securely log out, creating a security and usability issue. |
+| 4 | Cart badge count incorrect. | High | High | Incorrect cart information can confuse users and affect the shopping experience. |
+| 5 | Product price shown as $0. | High | High | Incorrect pricing may cause financial loss and incorrect orders if users can purchase at that price. |
+
